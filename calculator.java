@@ -46,6 +46,13 @@ public static HashMap<String,Matrix> matrixMap;
         System.out.println(matrixMap.size());
         for (String key : matrixMap.keySet()) {
             Matrix matrix = matrixMap.get(key);
+            //System.out.println(matrix.matrixPform.toString());
+            for(int[]a:matrix.matrixPform){
+                System.out.println(" ");
+                for(int i:a){
+                    System.out.println(i);
+                }
+            }
             System.out.println("Matrix name is "+matrix.name);
             for(int i=0;i<matrix.matrixrowList.size();i++){
                 System.out.println(matrix.matrixrowList.get(i));
